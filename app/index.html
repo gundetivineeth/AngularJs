@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-<body ng-app="myApp" ng-controller="myCtrl">
+<body ng-app="myApp" >
+        <p>The rootScope's favorite color:</p>
+        <h1>{{color}}</h1>
+        <div ng-controller="myCtrl">        
 <input type="text" id="name" ng-model="bindname">
 <p>enter text is {{ bindname }}</p>
 <div >
@@ -9,8 +12,13 @@
 <div ng-repeat="name in getMessages()">
 {{ name }}
 </div>
-</div>
 
+<div>
+  <p>The scope of the controller's favorite color:</p>
+  <h1>{{color}}</h1>
+</div>
+</div>
+</div>
 <script src="myApp.js"></script>
 <script src="myCtrl.js"></script>
 

@@ -76,24 +76,4 @@ Root Scope
 All applications have a $rootScope which is the scope created on the HTML element that contains the ng-app directive.
 The rootScope is available in the entire application.
 If a variable has the same name in both the current scope and in the rootScope, the application uses the one in the current scope.
-Example:
-
-<body ng-app="myApp">
-
-<p>The rootScope's favorite color:</p>
-<h1>{{color}}</h1>
-
-<div ng-controller="myCtrl">
-  <p>The scope of the controller's favorite color:</p>
-  <h1>{{color}}</h1>
-</div>
-<script>
-var app = angular.module('myApp', []);
-app.run(function($rootScope) {
-  $rootScope.color = 'blue';
-});
-app.controller('myCtrl', function($scope) {
-  $scope.color = "red";
-});
-</script>
-</body>
+Find the Example in the Code difference between $rootScope and $scope
