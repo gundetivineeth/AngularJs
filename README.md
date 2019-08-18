@@ -114,7 +114,21 @@ $setInterval: to repeat the same thing after any particular time interval <br>
 
 All of the above has to be passed as paramter in Controller to make use of them
 
+*********************
+Filters
 
+AngularJS Filters allow us to format the data to display on UI without changing original format.
+Filters can be used with an expression or directives using pipe | sign.
+
+Number:	Formats a numeric data as text with comma and fraction. <br>
+Currency:	Formats numeric data into specified currency format and fraction. <br>
+Date:	Formats date to string in specified format.<br>
+Uppercase:	Converts string to upper case.<br>
+Lowercase:	Converts string to lower case.<br>
+Filter:	Filters an array based on specified criteria and returns new array.<br>
+orderBy:	Sorts an array based on specified predicate expression.<br>
+Json:	Converts JavaScript object into JSON string.<br>
+limitTo:	Returns new array containing specified number of elements from an existing array.<br>
 
 
 
