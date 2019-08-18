@@ -9,7 +9,10 @@
 <p>enter text is {{ bindname }}</p>
 <div >
 {{ firstName + " " + lastName }}
-<div ng-repeat="name in getMessages()">
+<br>
+<button ng-click="buttonClicked()">{{buttonName}}</button>
+
+<div ng-show="clickChange" ng-repeat="name in getMessages()">
 {{ name }}
 </div>
 
