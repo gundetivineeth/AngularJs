@@ -19,16 +19,16 @@ In the Example we are going to use CDN only
 *****************
 Topics to be learned as part of AngularJS basics
 ***********
-ng-app
-Expressions
-Directives
-controllers
-scopes
-Events
-Services
-Filter
-Modules 
-Routers
+ng-app \n
+Expressions \n
+Directives \n
+controllers \n
+scopes \n
+Events \n
+Services \n
+Filter \n
+Modules \n
+Routers \n
 
 **********************
 ng-app
@@ -64,4 +64,35 @@ two way binding is achieved by using ng-model,
 when a controller data is sent to view it is one way binding
 
 ****************************
+Scopes
 
+The scope is the binding part between the HTML (view) and the JavaScript (controller).The scope is an object with the available properties and methods.The scope is available for both the view and the controller.When you make a controller in AngularJS, you pass the $scope object as an argument.
+If we consider an AngularJS application to consist of:
+View, which is the HTML.
+Model, which is the data available for the current view.
+Controller, which is the JavaScript function that makes/changes/removes/controls the data.
+Then the scope is the Model.
+Root Scope
+All applications have a $rootScope which is the scope created on the HTML element that contains the ng-app directive.
+The rootScope is available in the entire application.
+If a variable has the same name in both the current scope and in the rootScope, the application uses the one in the current scope.
+Example:
+<body ng-app="myApp">
+
+<p>The rootScope's favorite color:</p>
+<h1>{{color}}</h1>
+
+<div ng-controller="myCtrl">
+  <p>The scope of the controller's favorite color:</p>
+  <h1>{{color}}</h1>
+</div>
+<script>
+var app = angular.module('myApp', []);
+app.run(function($rootScope) {
+  $rootScope.color = 'blue';
+});
+app.controller('myCtrl', function($scope) {
+  $scope.color = "red";
+});
+</script>
+</body>
