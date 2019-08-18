@@ -101,3 +101,21 @@ ng-mouseup <br>
 ng-paste <br>
 
 We can also pass the $event object to method.Examples is available in repo. 
+*******************
+Services
+
+Services are used to make a restapi call or any other that are independent of controller and view logic.
+
+There are inbuilt Services in angularjs like
+$location: to get the browser present location <br> 
+$http: to request data from server <br>
+$timeout: to set the timeout with particular interval <br>
+$setInterval: to repeat the same thing after any particular time interval <br>
+
+All of the above has to be passed as paramter in Controller to make use of them
+
+
+
+
+
+

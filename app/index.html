@@ -15,14 +15,18 @@
 <div ng-show="clickChange" ng-repeat="name in getMessages()">
 {{ name }}
 </div>
-
+<div>
+<p>{{ getServiceData() }}</p>
+</div>
 <div>
   <p>The scope of the controller's favorite color:</p>
   <h1>{{color}}</h1>
 </div>
 </div>
 </div>
+
 <script src="myApp.js"></script>
+<script src="ServiceExample.js"></script>
 <script src="myCtrl.js"></script>
 
 </body>
