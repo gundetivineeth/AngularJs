@@ -19,16 +19,16 @@ In the Example we are going to use CDN only
 *****************
 Topics to be learned as part of AngularJS basics
 ***********
-ng-app \n
-Expressions \n
-Directives \n
-controllers \n
-scopes \n
-Events \n
-Services \n
-Filter \n
-Modules \n
-Routers \n
+ng-app <br>
+Expressions <br>
+Directives <br>
+controllers <br>
+scopes <br>
+Events <br>
+Services <br>
+Filter <br>
+Modules <br>
+Routers 
 
 **********************
 ng-app
@@ -77,6 +77,7 @@ All applications have a $rootScope which is the scope created on the HTML elemen
 The rootScope is available in the entire application.
 If a variable has the same name in both the current scope and in the rootScope, the application uses the one in the current scope.
 Example:
+
 <body ng-app="myApp">
 
 <p>The rootScope's favorite color:</p>
