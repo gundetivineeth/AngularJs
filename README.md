@@ -11,7 +11,7 @@ let start with basic steps to start and Angularjs app developement
 
 To add dependency related to angularjs their are multipule ways
 
-1.Download angularjs library by going to angularjs.org 
+1.Download angularjs library by going to angularjs.org <br>
 2.You can include AngularJS library from CDN url - https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js
 
 **************
