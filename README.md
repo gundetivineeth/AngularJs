@@ -130,6 +130,8 @@ orderBy:	Sorts an array based on specified predicate expression.<br>
 Json:	Converts JavaScript object into JSON string.<br>
 limitTo:	Returns new array containing specified number of elements from an existing array.<br>
 
+*******************
 
+The controller methods will be executed based on the number of scopes in controller but will max execute for 10times
 
 
