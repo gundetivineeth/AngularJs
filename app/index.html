@@ -18,13 +18,25 @@
 {{ name }}
 </div>
 <div>
-<p>{{ getServiceData() }}</p>
+
+<button ng-click="getServiceData()" name="Test Me">Test me</button>
+{{serviceData}}
+<div ng-show="enable" >
+{{serviceData}}
 </div>
+</div>
+
 <div>
   <p>The scope of the controller's favorite color:</p>
-  <h1>{{color}}</h1>
+ 
+</div>
+<div ng-repeat = "r  in vineeth">
+  
+  <p>{{ r.name }} {{ r.age }}</p>
+
 </div>
 </div>
+
 </div>
 
 <script src="myApp.js"></script>
